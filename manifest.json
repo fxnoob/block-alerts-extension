@@ -1,0 +1,28 @@
+{
+  "name": "BlockAlerts",
+  "description": "BlockAlerts",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "host_permissions": ["<all_urls>"],
+  "permissions": [ "activeTab", "tabs", "debugger", "webNavigation" ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/16x16.png",
+      "48": "images/48x48.png",
+      "128": "images/128x128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16x16.png",
+    "48": "images/48x48.png",
+    "128": "images/128x128.png"
+  },
+  "externally_connectable": {
+    "matches": [
+      "*://localhost/*"
+    ]
+  }
+}

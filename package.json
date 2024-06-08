@@ -1,0 +1,12 @@
+{
+  "name": "blockalerts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "manifest build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "manifest.js": "^0.0.9"
+  }
+}
