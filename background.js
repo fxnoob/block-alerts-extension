@@ -1,4 +1,4 @@
-chrome.webNavigation.onCommitted.addListener(async (details) => {
+chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
   if (details.frameId === 0) { // Ensure it's the main frame
     try {
       // Attach the debugger to the active tab
